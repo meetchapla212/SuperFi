@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style="font-family: sans-serif;">
+    <div class="logo" style="text-align: center;margin: 19px 0;">
+        <img src='<%=LOGO_IMAGE_URL%>' alt="logo"
+            style="display:block; margin: 0 auto; max-width: 90px; width: 90px; height: 25px;" width="92" height="25">
+    </div>
+    <div style="background: #FFFFFF; border-radius: 20px; max-width: 600px; margin: 0 auto; border: 2px solid #FCCCCF;">
+        <div style="padding: 56px 32px 0 32px">
+            <h1 style="font-weight: normal;font-size: 32px;line-height: 36px;color: rgba(17, 17, 17, 0.75);">Hi
+                <%=name%>,
+            </h1>
+            <p
+                style="margin-top: 32px;margin-bottom: 40px;font-size: 18px;line-height: 22px;max-width: 536px;color: rgba(17, 17, 17, 0.75);">
+                Please click the link below to open SuperFi and continue to your account
+            </p>
+            <div style="text-align: center">
+                <button
+                    style="background: #112042;border-radius: 107.5px;padding:11px 12px 13px 12px;height: 48px;width: 235px;margin-bottom:37px;color: #E5E179;font-size: 18px;line-height: 21px;border: unset;">
+                    <a href="<%=verifyUrl%>" style="color: #E5E179; text-decoration: none;">Verify email</a>
+                </button>
+            </div>
+        </div>
+        <div
+            style="background: linear-gradient(256.78deg, #D7B6E9 -0.07%, #FCCCCF 97.3%) !important;padding: 32px 20px;border-radius: 0 0 18px 16px;">
+            <p
+                style="font-style: normal;font-weight: bold;color: #726C69;margin: 0;font-size: 14px;line-height: 18px;max-width: 478px;">
+                You're receiving this message because this email is associated with an account with SuperFi</p>
+            <div
+                style="font-style: normal; font-weight: normal; font-size: 10px; line-height: 11px; color: rgba(17, 17, 17, 0.5);margin-top:20px; margin-bottom: 30px;">
+                <%=COPYRIGHT_YEAR%> © SuperFi ltd. All Rights Reserved.
+            </div>
+            <div style="display: flex;align-items: center;margin-bottom:15px;">
+                <a href="https://apps.apple.com/us/app/superfi/id1626468572" style="margin-right: 8px;">
+                    <img src='<%=APPLE_STORE_IMAGE_URL%>' alt="App Store" style="display:block; width: 120px;"
+                        width="120" height="35">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.superfi">
+                    <img src='<%=GOOGLE_PLAY_STORE_IMAGE_URL%>' alt="Play Syore" style="display:block; width: 120px;"
+                        width="120" height="35">
+                </a>
+            </div>
+            <div style="opacity: 0.5;background: rgba(17, 17, 17, 0.25);height: 1px;"></div>
+
+            <ul style="padding: 0;margin: 15px 0 0 0;display: flex;">
+                <li style="list-style: none;"><a href="<%=CONTACT_US%>"
+                        style="font-weight: bold;font-size: 12px;line-height: 14px;color: rgba(17, 17, 17, 0.5);text-decoration: underline;text-underline-offset: 1.5px;">Contact
+                        us</a></li>
+                <li style="list-style: none;margin-left: 25px;"><a href="<%=PRIVACY_POLICY%>"
+                        style="font-weight: bold;font-size: 12px;line-height: 14px;color: rgba(17, 17, 17, 0.5);text-decoration: underline;text-underline-offset: 1.5px;">Privacy
+                        Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    @media (max-width: 767px) {
+        .template_padd {
+            padding: 0;
+        }
+
+        .button_center {
+            text-align: left;
+        }
+
+        .template_block {
+            border: unset;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .template_foo {
+            background: transparent;
+            padding: 0;
+            border-top: 1px solid #7A7470;
+            padding-top: 32px;
+        }
+
+        .logo img {
+            height: auto !important;
+            width: auto !important;
+            margin-bottom: 28px;
+        }
+    }
+</style>
