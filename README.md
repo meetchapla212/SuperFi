@@ -1,4 +1,4 @@
-# Surer Fi Node
+# Super Fi Node
 
 Run backend server
 
